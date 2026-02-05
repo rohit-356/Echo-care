@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EchoCare — Early Mental Health Awareness & Support</title>
+    <meta name="description" content="EchoCare gently helps you understand how you're feeling — early, safely, and privately. A compassionate AI companion for emotional wellbeing." />
+    <meta name="author" content="EchoCare" />
+    <meta name="keywords" content="mental health, emotional support, AI therapy, wellness, mindfulness, self-care, emotional awareness" />
+
+    <meta property="og:title" content="EchoCare — Listening Before Things Get Heavy" />
+    <meta property="og:description" content="A compassionate AI companion for early mental health awareness. Talk safely, privately, and without judgment." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@EchoCare" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="theme-color" content="#5a7d66" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+ <audio id="maudio" src="/background.mp3" loop></audio>
+
+<div id="echo-player" onclick="toggleSound()" style="position:fixed; bottom:20px; right:20px; width:60px; height:60px; background-color:#8b5cf6; border-radius:50%; cursor:pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index:1000; display:flex; align-items:center; justify-content:center; color:white;">
+    
+    <svg id="icon-playing" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+    </svg>
+
+    <svg id="icon-muted" style="display:block;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <line x1="23" y1="9" x2="17" y2="15"></line>
+        <line x1="17" y1="9" x2="23" y2="15"></line>
+    </svg>
+</div>
+
+<script>
+    function toggleSound() {
+        var audio = document.getElementById("maudio");
+        var iconPlaying = document.getElementById("icon-playing");
+        var iconMuted = document.getElementById("icon-muted");
+
+        if (audio.paused) {
+            audio.play();
+            iconPlaying.style.display = "block";
+            iconMuted.style.display = "none";
+        } else {
+            audio.pause();
+            iconPlaying.style.display = "none";
+            iconMuted.style.display = "block";
+        }
+    }
+</script>
+  </body>
+</html>
