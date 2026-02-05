@@ -1,73 +1,49 @@
-# Welcome to your Lovable project
+# 🧠 EchoCare - AI-Powered Mental Health Companion
 
-## Project info
+**EchoCare** is an early-intervention mental health platform designed to bridge the gap between students and professional help. It uses AI to detect high-stress markers in real-time conversations and journaling, providing immediate "Safety Net" alerts and tracking mental well-being over time.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🚀 Key Features
 
-There are several ways of editing your application.
+### 1. 🤖 Empathetic AI Companion ("Dr. Sharma")
+- A real-time chat interface powered by **Google Gemini AI**.
+- Trained to listen without judgment and provide grounding techniques.
+- **Safety Net Logic:** Instantaneously detects high-risk keywords (e.g., "suicidal", "kill", "die") locally on the frontend to trigger emergency protocols, even if the AI response is blocked.
 
-**Use Lovable**
+### 2. 🚨 Emergency Risk Detection
+- **Real-time Alert System:** If high stress is detected, a prominent "High Stress Detected" alert appears.
+- **One-Click Connection:** A "Connect to Doctor" button that simulates (or sends) an urgent email with the user's status to a designated medical professional.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 3. 📔 AI-Analysed Journaling
+- Guided prompts like *"What emotion have I been carrying today?"*.
+- **Sentiment Analysis:** The backend analyzes every entry to calculate a "Stress Score" (1-10) and detects emotional tone (Happy, Sad, Stressed, Calm).
 
-Changes made via Lovable will be committed automatically to this repo.
+### 4. 📊 Weekly Mental Health Insights
+- Visualizes the user's stress trends over the last 7 days using dynamic graphs.
+- Helps users and counselors track improvements or declines in mental state.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS
+- **Backend:** Python, FastAPI, Uvicorn
+- **AI Model:** Google Gemini 1.5 Flash (via API)
+- **Database:** SQLite (Lightweight local storage)
+- **Visualization:** Recharts (for data graphs)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ⚙️ Installation & Setup
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Follow these steps to run EchoCare locally on your machine.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Prerequisites
+- Node.js & npm installed
+- Python 3.10+ installed
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/rohit-356/Echo-care.git](https://github.com/rohit-356/Echo-care.git)
+cd Echo-care
