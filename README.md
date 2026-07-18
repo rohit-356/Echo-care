@@ -1,5 +1,13 @@
 # 🧠 EchoCare - AI-Powered Mental Health Companion
 
+
+> 🏆 Built during a hackathon using **Google Antigravity** for rapid AI-assisted prototyping.
+> Architecture, feature scope, and the safety-detection logic were designed by me;
+> Antigravity + Gemini accelerated implementation under hackathon time constraints.
+
+
+
+
 **EchoCare** is an early-intervention mental health platform designed to bridge the gap between students and professional help. It uses AI to detect high-stress markers in real-time conversations and journaling, providing immediate "Safety Net" alerts and tracking mental well-being over time.
 
 ---
